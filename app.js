@@ -1,7 +1,25 @@
-const button = document.getElementById("apply");
-console.dir(button);
-function changeColour() {
-  document.body.style.button = "blue";
-}
+console.log("Hello world!");
 
-button.addEventListener("click", changeColour);
+const button = document.getElementById("apply");
+
+function changeColour() {
+  console.log("button");
+}
+console.dir(button);
+
+button.addEventListener("click", function () {
+  button.apply();
+});
+
+button.addEventListener("click", function () {
+  button.changeColour();
+});
+
+//function changeColour() {
+//document.body.style.button = "blue";
+//}
+//console.dir(button);
+
+//const colorBtn = document.getElementById("apply");
+
+//colorBtn.addEventListener("click", changeColour);
